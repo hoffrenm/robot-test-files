@@ -2,5 +2,4 @@
 
 This is a test repo for Robot Framework Language files
 
-commit from amandus
-
+commit (how about a merge conflict?) from amandus
