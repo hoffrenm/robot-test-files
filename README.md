@@ -2,5 +2,5 @@
 
 This is a test repo for Robot Framework Language files
 
-Amandus commit 6
+Amandus commit 7
 
