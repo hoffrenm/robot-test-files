@@ -8,7 +8,7 @@ Documentation     An example executing a loop only two times.
 Execute a loop only two times
     ${index}=    Set Variable    1
     FOR    ${robot}    IN    @{ROBOTS}
-        Exit For Loop If    ${index} > 2
+        Exit For Loop If    ${index} > 4
         Log    ${robot}
         ${index}=    Evaluate    ${index} + 1
     END
