@@ -33,6 +33,7 @@ Go To Login Page
 
 Input Username
     [Arguments]    ${username}
+    Page Should Not Contain     Welcome
     Input Text    username_field    ${username}
 
 Input Password
