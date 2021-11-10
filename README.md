@@ -2,4 +2,4 @@
 
 This is a test repo for Robot Framework Language files
 
-update on Amandus 1
+update on Amandus 2
