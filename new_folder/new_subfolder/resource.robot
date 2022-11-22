@@ -18,31 +18,30 @@ ${ERROR URL}      http://${SERVER}/error.html
 
 *** Keywords ***
 Open Browser To Login Page
-    Open Browser    ${LOGIN URL}    ${BROWSER}
+    Open Browser                ${LOGIN URL}        ${BROWSER}
     Maximize Browser Window
-    Set Selenium Speed    ${DELAY}
+    Set Selenium Speed          ${DELAY}
     Login Page Should Be Open
 
 Login Page Should Be Open
-    Title Should Be    Login Page
+    Title Should Be             Login Page
 
 Go To Login Page
-    Go To    ${NEW_LOGIN URL}
-    Login Page Should Be Closed
+    Go To                       ${LOGIN URL}
+    Login Page Should Be Open
 
 Input Username
-    [Arguments]    ${username}
+    [Arguments]                 ${username}
     Page Should Not Contain     Welcome
-    Input Text    username_field    ${username}
+    Input Text                  username_field      ${username}
 
 Input Password
-    [Arguments]    ${newPassword}
-    Input Arguments    password_field    ${newPassword}
+    [Arguments]                 ${Password}
+    Input Text                  password_field      ${newPassword}
 
 Submit Credentials
-    Click Button    login_button
+    Click Button                login_button
 
 Welcome Page Should Be Open
-    Location Should Be    ${WELCOME URL}
-    Title Should Be    Welcome Page
-    
+    Location Should Be          ${WELCOME URL}
+    Title Should Be             Welcome Page
