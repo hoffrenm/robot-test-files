@@ -23,8 +23,8 @@ Open Browser To Login Page
     Set Selenium Speed          ${DELAY}
     Login Page Should Be Open
 
-Login Page Should Be Open
-    Title Should Be             Login Page
+Error Page Should Be Open
+    Title Should Be             Error Page
 
 Go To Login Page
     Go To                       ${LOGIN URL}
