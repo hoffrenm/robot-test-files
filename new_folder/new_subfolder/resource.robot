@@ -27,8 +27,8 @@ Login Page Should Be Open
     Title Should Be    Login Page
 
 Go To Login Page
-    Go To    ${LOGIN URL}
-    Login Page Should Be Open
+    Go To    ${NEW_LOGIN URL}
+    Login Page Should Be Closed
 
 Input Username
     [Arguments]    ${username}
@@ -36,8 +36,8 @@ Input Username
     Input Text    username_field    ${username}
 
 Input Password
-    [Arguments]    ${password}
-    Input Text    password_field    ${password}
+    [Arguments]    ${passwordVariable}
+    Input Text    password_field    ${passwordVariable}
 
 Submit Credentials
     Click Button    login_button
