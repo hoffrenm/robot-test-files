@@ -24,9 +24,7 @@ Open Browser To Login Page
     Login Page Should Be Open
 
 Login Page Should Be Open
-    Page Should Contain Button      Log in
-    Page Should Contain Checkbox    Stay logged in
-    Title Should Be                 Login Page
+    Title Should Be             Login Page
 
 Go To Login Page
     Go To                       ${LOGIN URL}
